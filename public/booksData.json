@@ -1,0 +1,110 @@
+[
+  {
+    "bookId": 1,
+    "bookName": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "image": "https://i.ibb.co/tM9X16L0/pngwing-1.png",
+    "totalPages": 192,
+    "rating": 4.5,
+    "category": "Classic",
+    "tags": ["Fiction", "Romance"],
+    "publisher": "Scribner",
+    "yearOfPublishing": 1925
+  },
+  {
+    "bookId": 2,
+    "bookName": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "image": "https://i.ibb.co/9RVSYpr/kindpng-7318921.png",
+    "totalPages": 281,
+    "rating": 4.8,
+    "category": "Fiction",
+    "tags": ["Drama", "Social Justice"],
+    "publisher": "J.B. Lippincott & Co.",
+    "yearOfPublishing": 1960
+  },
+  {
+    "bookId": 3,
+    "bookName": "1984",
+    "author": "George Orwell",
+    "image": "https://i.ibb.co/zh18M1pb/kindpng-1064993.png" ,
+    "totalPages": 328,
+    "rating": 4.6,
+    "category": "Fiction",
+    "tags": ["Dystopian", "Political"],
+    "publisher": "Secker & Warburg",
+    "yearOfPublishing": 1949
+  },
+  {
+    "bookId": 4,
+    "bookName": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "image": "https://i.ibb.co/9mC4LP74/kindpng-4022054-1.png",
+    "totalPages": 224,
+    "rating": 4.3,
+    "category": "Fiction",
+    "tags": ["Young Adult", "Identity"],
+    "publisher": "Little, Brown and Company",
+    "yearOfPublishing": 1951
+  },
+  {
+    "bookId": 5,
+    "bookName": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "image": "https://i.ibb.co/JRB4bYBw/kindpng-81724-1.png",
+    "totalPages": 279,
+    "rating": 4.7,
+    "category": "Classic",
+    "tags": ["Romance", "Satire"],
+    "publisher": "T. Egerton, Whitehall",
+    "yearOfPublishing": 1813
+  },
+  {
+    "bookId": 6,
+    "bookName": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "image": "https://i.ibb.co/2Y8krjpt/kindpng-2193744-1.png",
+    "totalPages": 310,
+    "rating": 4.9,
+    "category": "Fantasy",
+    "tags": ["Adventure", "Epic"],
+    "publisher": "Allen & Unwin",
+    "yearOfPublishing": 1937
+  },
+  {
+    "bookId": 7,
+    "bookName": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "image": "https://i.ibb.co/sJF15Xfq/kindpng-5624060-1.png",
+    "totalPages": 309,
+    "rating": 4.8,
+    "category": "Fantasy",
+    "tags": ["Magic", "Young Adult"],
+    "publisher": "Bloomsbury",
+    "yearOfPublishing": 1997
+  },
+  {
+    "bookId": 8,
+    "bookName": "The Alchemist",
+    "author": "Paulo Coelho",
+    "image": "https://i.ibb.co/mFhFHRkQ/kindpng-2592315-1.png",
+    "totalPages": 177,
+    "rating": 4.6,
+    "category": "Fiction",
+    "tags": ["Philosophical", "Adventure"],
+    "publisher": "HarperCollins",
+    "yearOfPublishing": 1988
+  },
+  {
+    "bookId": 9,
+    "bookName": "The Girl on the Train",
+    "author": "Paula Hawkins",
+    "image": "https://i.ibb.co/wNcBbYK0/kindpng-4945926-1.png" ,
+    "totalPages": 316,
+    "rating": 4.2,
+    "category": "Mystery",
+    "tags": ["Suspense", "Psychological"],
+    "publisher": "Riverhead Books",
+    "yearOfPublishing": 2015
+  }
+]

@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 
 const getStoredRedList = () => {
 
@@ -26,6 +27,8 @@ console.log(id, 'already exists in the read list')
         storedList.push(id);
         const storedListStr = JSON.stringify(storedList);
         localStorage.setItem('read-list', storedListStr);
+        // ideaLLy trigger toast from the coponent
+        toast('this book is added to you read list')
     }
 }
-export {addToStoredRedList}
+export {addToStoredRedList, getStoredRedList} 

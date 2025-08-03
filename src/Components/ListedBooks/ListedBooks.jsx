@@ -11,6 +11,7 @@ import { BsCheckLg } from "react-icons/bs";
 import Book from '../Book/Book';
 
 const ListedBooks = () => {
+  const [sort, setSort] = useState('');
     const [readList, setReadList] = useState([]);
 
   const allBooks = useLoaderData();
@@ -30,18 +31,50 @@ const readBookList = allBooks.filter(book => storedReadListInt.includes(book.boo
 setReadList(readBookList);
 
  },[]);
+
+
+ const handleSort = sortType =>{
+  setSort(sortType);
+
+if(sortType === "Number of pages"){
+  const sortedReadLis = [...readList].sort((a, b) => a.totalPages - b.totalPages);
+  setReadList(sortedReadLis);
+}
+if(sortType === "Ratings"){
+  const sortedReadList = [...readList].sort((a, b) => a.rating - b.rating);
+  setReadList(sortedReadList);
+}
+
+ }
     return (
         <div>
            <h2 className='text-3xl my-12 text-center '> Books</h2> 
 
 
 
-<div className='my-12 text-center'>
+{/* <div className='my-12 text-center'>
             <button className="btn bg-[#23BE0A] mr-4 text-center text-white "> Sort By <BsCheckLg className='text-white ' />
+</button>
+</div> */}
+<div className='my-12 text-center'>
+     {/* change popover-1 and --anchor-1 names. Use unique names for each dropdown */}
+{/* For TSX uncomment the commented types below */}
+<button className="btn   bg-[#23BE0A] mr-4 text-center text-white" popoverTarget="popover-1" style={{ anchorName: "--anchor-1" } /* as React.CSSProperties */}>
+{
+sort ? `sort by: ${sort}` : 'Sort by'
+}
+<BsCheckLg className='text-white ' />
 </button>
 </div>
 
-   
+
+<ul className="dropdown menu w-52 rounded-box bg-base-100 shadow-sm"
+  popover="auto" id="popover-1" style={{ positionAnchor: "--anchor-1" } /* as React.CSSProperties */ }>
+  <li onClick={() => handleSort('Ratings')}><a>Rating</a></li>
+  <li onClick={() => handleSort('Number of pages')}><a>Number of pages</a></li>
+  <li onClick={() => handleSort('Publisher year')}><a>Publisher year</a></li>
+
+</ul>
   
   <Tabs>
     <TabList>

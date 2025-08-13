@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { addToStoredRedList } from '../../utility/addToDb';
+import { Helmet } from 'react-helmet';
 
 const BookDetail = () => {
 //     const{ bookId } = useParams();
@@ -55,10 +56,16 @@ const handleMarAsRead = (id) =>{
  * */ 
 
 addToStoredRedList(id);
-
+npm 
 }
     return (
         <div className='my-12 space-y-5 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-items-center '>
+
+<Helmet>
+  <title>Book Detail {bookId}</title>
+</Helmet>
+
+
 <div>
              <h2>Book details {bookId} </h2> 
             

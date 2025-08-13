@@ -9,6 +9,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { BsCheckLg } from "react-icons/bs";
 import Book from '../Book/Book';
+import { Helmet } from 'react-helmet';
 
 const ListedBooks = () => {
   const [sort, setSort] = useState('');
@@ -48,6 +49,13 @@ if(sortType === "Ratings"){
  }
     return (
         <div>
+<Helmet>
+  <title>
+    Listed Books
+  </title>
+</Helmet>
+
+
            <h2 className='text-3xl my-12 text-center '> Books</h2> 
 
 
